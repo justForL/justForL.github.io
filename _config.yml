@@ -1,98 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-react:
-  title: James
-  name: James
-  menu_right_subtitle: Blogger || James
-  avatar: http://api.adorable.io/avatar/aplaza@liquidthink.net
-  logo: static/img/logo_theme.jpg
-  email: layer_james@163.com
-  description: > # this means to ignore newlines until "baseurl:"
-    Tale is cheap, show me your code.
-  baseurl: "" # the subpath of your site, e.g. /blog
-  url: "http://blog.bonjour-james.top" # the base hostname & protocol for your site
-  permalink: /posts/:title
-  social:
-    twitter: 
-    github: 
-    facebook: 
-    code: 
-    google-plus: 
-    rss: feed.xml
-
-
-
 title: James
-name: James
-menu_right_subtitle: Blogger || James
-avatar: http://api.adorable.io/avatar/aplaza@liquidthink.net
-logo: static/img/logo.png
-email: layer_james@163.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://test_domain.com:4000" # the base hostname & protocol for your site
-permalink: /posts/:title
+description: 'James-blog'
+url: ''
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
 
-twitter_username: 
-github_username: 
+author: James
+  name: '冷健'
+  email: layer_james@163.com
+  twitter_username: 
+  facebook_username: 
+  github_username:  
+  linkedin_username: 
 
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
 
 kramdown:
+  # use Github Flavored Markdown
   input: GFM
-  syntax_highlighter: rouge
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-source: src
-destination: public
-
-assets:
-  compress:
-    css: sass
-    js: false
-
-  autowrite: true
-  cache: .asset-cache
-  cache_type: filesystem
-  cdn: www.example.com
-  skip_baseurl_with_cdn: false
-  skip_prefix_with_cdn: false
-  prefix: "/assets"
-  digest: true
-
-  assets:
-    - "*.png"
-    - "bundle.css"
-    - "bundle.js.map"
-    - "*.svg"
-    - "*.eof"
-    - "*.ttf"
-
-  sources:
-    - src/_assets/css
-    - src/_assets/fonts
-    - src/_assets/img
-    - src/_assets/projects
-
-  features:
-    liquid: false
-    integrity: true
-    automatic_img_size: true
-    automatic_img_alt : true
-
-exclude: ['node_modules', 'Gemfile', '.asset-cache', 'build-prod.sh', 'build-dev.sh']
-
-gems:
-  - jekyll-assets
-  - jekyll_pages_api
-  - jekyll-react
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
