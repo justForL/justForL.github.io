@@ -44,7 +44,7 @@ url: "blog.bonjour-james.top" # the base hostname & protocol for your site
 
 # Social settings
 facebook_url:
-github_url:https://github.com/justForL
+github_url: https://github.com/justForL
 googleplus_url:
 instagram_url:
 linkedin_url:
