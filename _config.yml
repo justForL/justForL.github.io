@@ -2,7 +2,7 @@
 title: ''
 description: 'James-blog'
 url: ''
-baseurl: ''
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
