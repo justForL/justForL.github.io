@@ -20,7 +20,7 @@ footer:
 author: '冷健'
 nickname: 'James'
 bio: 'iOS开发者'
-avatar: '/assets/img/profile.jpg'
+avatar: 'https://ws1.sinaimg.cn/large/006tKfTcly1fpzcn0j65zj30dc0dc3zv.jpg'
 
 # Search
 search: true
