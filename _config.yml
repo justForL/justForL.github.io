@@ -1,43 +1,77 @@
-# Site settings
-title: ''
-description: 'James-blog'
-url: ''
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+# Site settings 配置站点
+title: 'James的独立博客'
+description: 'Talk is cheap, show me your code.'
+keyword: 'iOS开发, 博客, Objective-C'
+url: 'http://blog.bonjour-james.top' # your host
 
-author: 'James'
-  name: ''
-  email: 'layer_james@163.com'
-  twitter_username: 
-  facebook_username: 
-  github_username:  
-  linkedin_username: 
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2017
+
+# Author 配置博主信息
+author: '冷健'
+nickname: 'James'
+bio: 'iOS开发者'
+avatar: '/assets/img/profile.jpg'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments 评论功能
+comments:
+  disqus: false
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+# social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: []
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站
+# url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  github: 'https://github.com/justForL'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
 highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed
-
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
 
-plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+# RSS
+RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
+
+# Plugins
+plugins: [jekyll-paginate]
