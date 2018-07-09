@@ -75,7 +75,7 @@ const {width,height} = Dimensions.get('window')
 #### NavigationTabBar
 TabBar使用上比较通俗易懂😆直接粘代码了
 
-```
+```javascript
 
 import LJHome from '../tabs/main/LJHome'
 import { createBottomTabNavigator } from "react-navigation";
