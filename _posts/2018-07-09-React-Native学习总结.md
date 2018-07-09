@@ -45,7 +45,7 @@ tags: RN
 
 上拉加载更多也和我们在原生中不一样,只需要指定listview滚到到底部后,开始刷新数据就行了,使用起来真的超方便
 
-```
+```javascript
 onEndReached={ this._toEnd.bind(this) }
 onEndReachedThreshold={10}
 scrollEventThrottle={50}
@@ -58,14 +58,14 @@ scrollEventThrottle={50}
 #### Dimensions
 是用来获取屏幕的尺寸滴,一般常用操作就是获取屏幕宽高
 
-```
+```javascript
 width:Dimensions.get('window').width,
 height:Dimensions.get('window').height,
 
 ```
 也可以
 
-```
+```javascript
 const {width,height} = Dimensions.get('window')
 ```
 #### Image
@@ -152,7 +152,7 @@ export default BottomTabRouters;
 
 在OC里面怎么实现方法,如何判断进行回调就涉及到业务层面啦,就不一一赘述啦,接下来是我们回到rn里如何去调用
 
-```
+```javascript
 
 NativeModules.TestTool.testFuc('123').then((result) => {
             
