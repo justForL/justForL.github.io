@@ -1,7 +1,7 @@
 ---
 title: Swift&RxSwift
 
-layout:post
+layout: post
 
 tags: Swift
 
